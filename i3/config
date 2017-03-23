@@ -43,6 +43,8 @@ bindsym $mod+n exec netbeans
 #bindsym $mod+Shift+n exec nm-applet
 # file manager
 bindsym $mod+Shift+f exec nautilus
+#Spotify
+bindsym $mod+Shift+s exec spotify
 exec_always nm-applet
 
 # Pulse Audio controls
@@ -159,9 +161,12 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace 10
 
 exec chromium
+exec spotify
 #exec netbeans
 assign [class="Chromium"] workspace $workspace1
 assign [class="NetBeans IDE 8.1"] workspace $workspace3
+#assign [class="Spotify"] workspace $workspace9
+for_window [class="Spotify"] move to workspace $workspace9
 #assign [class="Gnome-terminal"] workspace $workspace2
 
 # reload the configuration file
